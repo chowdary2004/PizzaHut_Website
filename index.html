@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>PizzaHut Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <a class="navbar-brand" href="#">
+                <img src="pizza-hut-logo.jpeg" alt="logo image">
+                PizzaHut
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" class="nav_link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" class="nav_link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular" class="nav_link">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recently" class="nav_link">Recently</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <img src="home.jpeg" alt="home image" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        The <br>
+                        Ultimate <br>
+                        Pizza
+                    </h1>
+                    <p class="home__description">
+                        Enjoy mouth-watering, handcrafted pizzas made with 
+                        locally-sourced ingredients from Pizza Hut. With easy 
+                        online ordering and fast delivery options.
+                    </p>
+                    <a href="order.html" class="btn btn-primary button">
+                        Order Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title">
+                        We Offer <br>
+                        Healthy Food
+                    </h2>
+                    <p class="about__description">
+                        We are dedicated to crafting mouth-watering pizzas that 
+                        are made with only the freshest and highest quality
+                        locally-sourced ingredients. We believe that using fresh 
+                        ingredients not only enhances the taste of our pizzas. 
+                        <br>
+                        <br>
+                        So come on in and taste the difference for yourself – we 
+                        can't wait to serve you!
+                    </p>
+                </div>
+                <img src="about-us.jpg" alt="about image" class="about__img">
+            </div>
+        </section>
+        <section class="popular section" id="popular">
+            <span class="section__subtitle">The Best Food</span>
+            <h2 class="section__title">Popular Pizza</h2>
+            <div class="popular__container container grid">
+                <!-- Use Bootstrap cards for each pizza item -->
+                <div class="card popular__card">
+                    <img src="margherita.jpeg" class="card-img-top popular__img" alt="popular image">
+                    <div class="card-body popular__content">
+                        <a href="#" class="btn btn-primary popular__button">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <h3 class="card-title popular__name">Margherita</h3>
+                        <p class="card-text popular__description">
+                            A classic pizza with tomato sauce, fresh mozzarella, and basil.
+                        </p>
+                        <p class="popular__price">$12.99</p>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <img src="pepperoni.jpeg" class="card-img-top popular__img" alt="popular image">
+                    <div class="card-body popular__content">
+                        <a href="#" class="btn btn-primary popular__button">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <h3 class="card-title popular__name">Pepperoni</h3>
+                        <p class="card-text popular__description">
+                            A traditional pizza topped with tomato sauce, mozzarella cheese.
+
+                        </p>
+                        <p class="popular__price">$14.99</p>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <img src="meat lovers.jpeg" class="card-img-top popular__img" alt="popular image">
+                    <div class="card-body popular__content">
+                        <a href="#" class="btn btn-primary popular__button">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <h3 class="card-title popular__name">Meat Lovers</h3>
+                        <p class="card-text popular__description">
+                            A hearty pizza topped with tomato sauce, mozzarella cheese, pepperoni.
+                        </p>
+                        <p class="popular__price">$17.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recently section" id="recently">
+            <div class="recently__container container grid">
+                <div class="recently__data">
+                    <span class="section__subtitle">Recently Added</span>
+                    <h2 class="section__title">
+                        Buffalo <br>
+                        Chicken <br>
+                        pizza
+                    </h2>
+                    <p class="recently__description">
+                        Check out what's new and don't miss out 
+                        on the opportunity to treat yourself 
+                        to a delicious meal. Indulge in the 
+                        experience and savor every bite.
+
+                    </p>
+                    <a href="order.html" class="btn btn-primary button">
+                        Order Now <i class="fas fa-arrow-right"></i>
+                    </a>
+    
+                </div>
+                <img src="buffalo chicken.jpeg" alt="recently image" class="recently__img">
+            </div>
+        </section>
+        <!-- Continue with the rest of your website sections -->
+    </main>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="" class="footer__logo">
+                    <img src="pizza-hut-logo.jpeg" alt="logo image">
+                    PizzaHut
+                </a>
+                <p class="footer__description">
+                    Food for the body is not <br>
+                    enough. There must be food <br>
+                    for the soul.
+                </p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Main Menu</h3>
+                    <ul class="footer__links">
+                        <li><a href="" class="footer__link">About</a></li>
+                        <li><a href="" class="footer__link">Menus</a></li>
+                        <li><a href="" class="footer__link">Offer</a></li>
+                        <li><a href="" class="footer__link">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Information</h3>
+                    
+                    <ul class="footer__links">
+                        <li><a href="" class="footer__link">Contact</a></li>
+                        <li><a href="" class="footer__link">Order & Returns</a></li>
+                        <li><a href="" class="footer__link">Videos</a></li>
+                        <li><a href="" class="footer__link">Reservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Address</h3>
+                        
+                    <ul class="footer__links">
+                        <li class="footer__information">
+                            Address <br>
+                            here</li>
+                        <li class="footer__information">9AM - 11PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy container">
+            &copy; Copyright lightcode. All rights reserved
+        </div>
+    </footer>
+
+    <!-- Add your scroll-up button and other JavaScript scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

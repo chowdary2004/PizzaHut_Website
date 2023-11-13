@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Menu</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Include your custom CSS for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main container">
+        <h1 class="mb-4" >Pizza Menu</h1>
+        <div id="pizza-list">
+            <div class="row-cols-1">
+                <div class="col-md-6">
+                    <div class="pizza mb-4">
+                        <span>Margherita Pizza</span>
+                        <div class="input-group">
+                            <input type="number" class="form-control" value="0" min="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary order-button">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pizza mb-4">
+                        <span>Pepperoni Pizza</span>
+                        <div class="input-group">
+                            <input type="number" class="form-control" value="0" min="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary order-button">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                        <div class="pizza mb-4">
+                            <span>Buffalo-Chicken Pizza</span>
+                            <div class="input-group">
+                                <input type="number" class="form-control" value="0" min="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary order-button">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pizza mb-4">
+                            <span>Ultimate Pizza</span>
+                            <div class="input-group">
+                                <input type="number" class="form-control" value="0" min="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary order-button">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // JavaScript to change the button text to "Order Placed" when clicked
+        const buttons = document.querySelectorAll('.order-button');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', function () {
+                this.textContent = 'Order Placed';
+                this.style.backgroundColor = '#28a745'; // Change to green to indicate order placed
+            });
+        });
+    </script>
